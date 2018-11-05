@@ -1,0 +1,114 @@
+.center-nav {
+    text-align:center;
+}
+
+.container {
+    position: relative;
+    text-align: center;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    height:700px;
+}
+
+.titleText {
+    position: absolute;
+    top:45%;
+    left:75%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size:8vmin;
+
+
+}
+.centerText {
+    margin-left:30%;
+    margin-right:30%;
+    font-size:2vmin;
+}
+
+/* @media only screen and (min-device-width: 414px) and (max-device-height: 896px){
+    .centerText {
+        margin-left:10%;
+        margin-right:10%;
+        font-size:2vmin;
+    }
+} */
+@media screen and (max-width: 600px) {
+    .centerText {
+        margin-left:10%;
+        margin-right:10%;
+        font-size:2vmin;
+    }
+}
+
+
+.image-card {
+    max-width:100%;
+    min-width:100%;
+}
+*[parallax] {
+    position:relative;
+    width: 100%;
+    height:40%;
+    min-height:600px;
+    text-align:center;
+    background-size: 100%;
+    margin-top: 1%;
+    margin-bottom: 3%;
+}
+@media screen and (max-width: 1000px) {
+    *[parallax] {
+        position:relative;
+        width: 100%;
+        height:40%;
+        min-height:500px;
+        text-align:center;
+        background-size: 100%;
+        margin-top: 1%;
+        margin-bottom: 3%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    *[parallax] {
+        position:relative;
+        width: 100%;
+        height:40%;
+        min-height:400px;
+        text-align:center;
+        background-size: 100%;
+        margin-top: 1%;
+        margin-bottom: 3%;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    *[parallax] {
+        position:relative;
+        width: 100%;
+        height:40%;
+        min-height:300px;
+        text-align:center;
+        background-size: 100%;
+        margin-top: 1%;
+        margin-bottom: 3%;
+    }
+}
+
+
+
+
+#title-image {
+    background-image: url('../../assets/farah4.jpg');
+}
+
+.secondary-container {
+    margin: 10%, 20px, 50%, 3%;
+    padding:5%;
+}
+
+#center-image {
+    width: 25%;
+    text-align:center;
+    transform: rotate(-90deg);
+}

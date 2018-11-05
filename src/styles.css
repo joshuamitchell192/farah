@@ -1,0 +1,21 @@
+/* You can add global styles to this file, and also import other style files */
+
+/* .mat-button.mat-nav {
+  min-width: 10%;
+} */
+
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+
+.mat-list-item {
+  float: right;
+}
+
+.toolbar-flex {
+  flex: 1 0.5 auto;
+}
+
+.fill-remaining-space {
+  /*This fills the remaining space, by using flexbox.  
+ Every toolbar row uses a flexbox row layout. */
+ flex: 1 1 auto;
+}

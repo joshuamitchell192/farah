@@ -1,0 +1,31 @@
+
+
+<div style="text-align:center" padding-top=30px>
+  <img alt="Logo" src="src\assets\Logo.JPG" style="width:40%; height:40%">
+
+</div>
+<!-- <mat-toolbar > -->
+  <div style="text-align:center">
+
+
+    <button mat-stroked-button color="basic" style="min-width:80px; width:10%" (mouseenter)="matMenuTrigger.closeMenu" (mouseenter)="matMenuTriggerAbout.closeMenu()" routerLink="home">Home</button>
+
+    <button mat-stroked-button color="basic" style="min-width: 80px; width: 10%" [matMenuTriggerFor]="about" #matMenuTriggerAbout="matMenuTrigger" (mouseenter)="matMenuTriggerAbout.openMenu()" (mouseenter)="matMenuTrigger.closeMenu()" routerlink="/about">About</button>
+    <mat-menu #about="matMenu">
+      <div (mouseleave)="matMenuTriggerAbout.closeMenu()" >
+        <button mat-menu-item color="primary" routerLink="about">contact</button>
+      </div>
+    </mat-menu>
+
+    <button mat-stroked-button color="basic" style="min-width: 80px; width: 10%" [matMenuTriggerFor]="menu" #matMenuTrigger="matMenuTrigger" (mouseenter)="matMenuTrigger.openMenu()" (mouseenter)="matMenuTriggerAbout.closeMenu()" >Series</button>
+    <mat-menu #menu="matMenu" xPosition="after">
+      <div (mouseleave)="matMenuTrigger.closeMenu()">
+        <button mat-menu-item>November Series</button>
+
+      </div>
+    </mat-menu>
+
+
+  </div>
+<!-- </mat-toolbar> -->
+<router-outlet></router-outlet>
