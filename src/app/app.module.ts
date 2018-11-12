@@ -12,18 +12,21 @@ import { ParallaxModule, ParallaxConfig } from 'ngx-parallax';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
+import { SeriesComponent } from './series/series.component';
 
 const routes: Routes = [
   {path:'', component: HomeComponent},
   {path:'home', component: HomeComponent},
   {path: 'about', component: AboutComponent},
+  {path: 'series', component: SeriesComponent},
 ]
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    AboutComponent
+    AboutComponent,
+    SeriesComponent
   ],
   imports: [
     RouterModule.forRoot(routes),

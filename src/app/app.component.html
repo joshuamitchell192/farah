@@ -20,7 +20,7 @@
     <button mat-stroked-button color="basic" style="min-width: 80px; width: 10%" [matMenuTriggerFor]="menu" #matMenuTrigger="matMenuTrigger" (mouseenter)="matMenuTrigger.openMenu()" (mouseenter)="matMenuTriggerAbout.closeMenu()" >Series</button>
     <mat-menu #menu="matMenu" xPosition="after">
       <div (mouseleave)="matMenuTrigger.closeMenu()">
-        <button mat-menu-item>November Series</button>
+        <button mat-menu-item routerLink="series">November Series</button>
 
       </div>
     </mat-menu>

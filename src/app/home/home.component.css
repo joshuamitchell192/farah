@@ -1,15 +1,3 @@
-.center-nav {
-    text-align:center;
-}
-
-.container {
-    position: relative;
-    text-align: center;
-    margin-top: 3%;
-    margin-bottom: 3%;
-    height:700px;
-}
-
 .titleText {
     position: absolute;
     top:45%;
@@ -26,13 +14,6 @@
     font-size:2vmin;
 }
 
-/* @media only screen and (min-device-width: 414px) and (max-device-height: 896px){
-    .centerText {
-        margin-left:10%;
-        margin-right:10%;
-        font-size:2vmin;
-    }
-} */
 @media screen and (max-width: 600px) {
     .centerText {
         margin-left:10%;
@@ -41,11 +22,6 @@
     }
 }
 
-
-.image-card {
-    max-width:100%;
-    min-width:100%;
-}
 *[parallax] {
     position:relative;
     width: 100%;
@@ -103,12 +79,19 @@
 }
 
 .secondary-container {
-    margin: 10%, 20px, 50%, 3%;
-    padding:5%;
+    margin-top:100px;
+    margin-bottom: 100px;
 }
 
-#center-image {
-    width: 25%;
-    text-align:center;
-    transform: rotate(-90deg);
+.footer {
+  margin: 100px, 20%, 20%, 100px;
+}
+
+table {
+  border-collapse: separate;
+  border-spacing: 50px 0;
+}
+
+td {
+  padding: 10px 0;
 }
