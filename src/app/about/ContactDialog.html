@@ -1,0 +1,29 @@
+<h1 mat-dialog-title>Get In Touch</h1>
+<div mat-dialog-content>
+  <!-- <p>Name</p> -->
+  <mat-form-field style="width:350px !important">
+    <input matInput placeholder="Name" [(ngModel)]="data.name">
+  </mat-form-field>
+
+  <!-- <p>Email</p> -->
+  <mat-form-field style="width:350px !important">
+    <input matInput placeholder="Email" [(ngModel)]="data.email">
+    <!-- [formControl]="data.email"> -->
+    <!-- <mat-error *ngIf="emailValidator.invalid">{{getErrorMessage()}}</mat-error> -->
+  </mat-form-field>
+
+  <!-- <p>Subject</p> -->
+  <mat-form-field style="width:350px !important">
+    <input matInput placeholder="Subject" [(ngModel)]="data.subject">
+  </mat-form-field>
+
+  <!-- <p>Message</p> -->
+  <mat-form-field  style="width:350px !important">
+    <textarea matInput placeholder="Message" [(ngModel)]="data.message" style="height:100px"></textarea>
+  </mat-form-field>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="onNoClick()">No Thanks</button>
+  <button mat-button (click)="printData()" [mat-dialog-close]="data" cdkFocusInitial>Ok</button>
+</div>
+

@@ -1,31 +1,72 @@
 
-
+<!-- Logo Image -->
 <div style="text-align:center" padding-top=30px>
   <img alt="Logo" src="src\assets\Logo.JPG" style="width:40%; height:40%">
 
 </div>
-<!-- <mat-toolbar > -->
-  <div style="text-align:center">
+
+<div style="text-align:center">
+
+  <!--
+
+    Home Button
+
+  -->
+
+  <button mat-raised-button color="primary" style="min-width:80px; width:10%; margin-right:15px"
+    (mouseenter)="matMenuTrigger.closeMenu()" (mouseenter)="matMenuTriggerAbout.closeMenu()" routerLink="home">
+
+    Home
+
+  </button>
+
+  <!--
+
+    About Button
+
+  -->
 
 
-    <button mat-stroked-button color="basic" style="min-width:80px; width:10%" (mouseenter)="matMenuTrigger.closeMenu" (mouseenter)="matMenuTriggerAbout.closeMenu()" routerLink="home">Home</button>
+  <button mat-raised-button color="primary" style="min-width: 80px; width: 10%; margin-right:15px" mat-menu.hasBackdrop=false
+    [matMenuTriggerFor]="about" #matMenuTriggerAbout="matMenuTrigger" (mouseenter)="matMenuTriggerAbout.openMenu()"
+    (mouseenter)="matMenuTrigger.closeMenu()" routerlink="about">
 
-    <button mat-stroked-button color="basic" style="min-width: 80px; width: 10%" [matMenuTriggerFor]="about" #matMenuTriggerAbout="matMenuTrigger" (mouseenter)="matMenuTriggerAbout.openMenu()" (mouseenter)="matMenuTrigger.closeMenu()" routerlink="/about">About</button>
-    <mat-menu #about="matMenu">
-      <div (mouseleave)="matMenuTriggerAbout.closeMenu()" >
-        <button mat-menu-item color="primary" routerLink="about">contact</button>
-      </div>
-    </mat-menu>
+    About
 
-    <button mat-stroked-button color="basic" style="min-width: 80px; width: 10%" [matMenuTriggerFor]="menu" #matMenuTrigger="matMenuTrigger" (mouseenter)="matMenuTrigger.openMenu()" (mouseenter)="matMenuTriggerAbout.closeMenu()" >Series</button>
-    <mat-menu #menu="matMenu" xPosition="after">
-      <div (mouseleave)="matMenuTrigger.closeMenu()">
-        <button mat-menu-item routerLink="series">November Series</button>
-
-      </div>
-    </mat-menu>
+  </button>
 
 
-  </div>
-<!-- </mat-toolbar> -->
+  <!-- menu for about button -->
+  <mat-menu hasBackdrop=false #about="matMenu">
+    <div (mouseleave)="matMenuTriggerAbout.closeMenu()">
+      <button mat-menu-item color="primary" routerLink="about">contact</button>
+    </div>
+  </mat-menu>
+
+
+  <!--
+
+    Series Button
+
+  -->
+
+  <button mat-raised-button color="primary" style="min-width: 80px; width: 10%"
+    [matMenuTriggerFor]="menu" #matMenuTrigger="matMenuTrigger" (mouseenter)="matMenuTrigger.openMenu()"
+    (mouseenter)="matMenuTriggerAbout.closeMenu()" >
+
+    Series
+
+  </button>
+
+`<!-- Menu for series button -->
+  <mat-menu hasBackdrop=false #menu="matMenu" xPosition="after">
+    <div (mouseleave)="matMenuTrigger.closeMenu()">
+      <button mat-menu-item routerLink="series">November Series</button>
+
+    </div>
+  </mat-menu>
+
+
+</div>
+
 <router-outlet></router-outlet>

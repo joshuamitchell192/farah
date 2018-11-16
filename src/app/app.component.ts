@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = "farah's website";
+
+  print() {
+    console.log("Home Button Entered");
+  }
 }
