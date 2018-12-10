@@ -2,6 +2,8 @@ import { Component, OnInit, Inject } from '@angular/core';
 import {MatDialog, MatDialogRef, MAT_DIALOG_DATA} from '@angular/material';
 import {MatSnackBar} from '@angular/material';
 import {FormControl, Validators} from '@angular/forms';
+import * as dataFile from './data.json';
+
 
 export interface ContactDialogueData {
   name : string;
@@ -24,7 +26,7 @@ export class AboutComponent implements OnInit {
 
   emailValidator = new FormControl('', [Validators.required, Validators.email]);
 
-  constructor(public dialog: MatDialog) { }
+  constructor(public dialog: MatDialog) {  }
 
   ngOnInit() {
   }
@@ -66,10 +68,13 @@ export class ContactDialog {
   }
 
   printData () {
-    console.log("Name " + this.data.name + "\nEmail " + this.data.email + "\nSubject "  + this.data.subject + "\nMessage \n" + this.data.message);
+    console.log("Saving user details...\n" +"Name " + this.data.name + "\nEmail " + this.data.email + "\nSubject "  + this.data.subject + "\nMessage \n" + this.data.message);
   }
 
   storeData () {
-    
+    //dataFile = JSON.parse(dataFile)
+    //dataFile.push({Name:this.data.name, Email:this.data.email, Subject: this.data.subject, Message: this.data.message})
+
   }
 }
+

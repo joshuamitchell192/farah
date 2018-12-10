@@ -13,7 +13,7 @@
 
   -->
 
-  <button mat-raised-button color="primary" style="min-width:80px; width:10%; margin-right:15px"
+  <button mat-raised-button color="link" style="min-width:80px; width:10%; margin-right:15px"
     (mouseenter)="matMenuTrigger.closeMenu()" (mouseenter)="matMenuTriggerAbout.closeMenu()" routerLink="home">
 
     Home
@@ -27,7 +27,7 @@
   -->
 
 
-  <button mat-raised-button color="primary" style="min-width: 80px; width: 10%; margin-right:15px" mat-menu.hasBackdrop=false
+  <button mat-raised-button color="link" style="min-width: 80px; width: 10%; margin-right:15px" mat-menu.hasBackdrop=false
     [matMenuTriggerFor]="about" #matMenuTriggerAbout="matMenuTrigger" (mouseenter)="matMenuTriggerAbout.openMenu()"
     (mouseenter)="matMenuTrigger.closeMenu()" routerlink="about">
 
@@ -50,11 +50,11 @@
 
   -->
 
-  <button mat-raised-button color="primary" style="min-width: 80px; width: 10%"
+  <button mat-raised-button color="link" style="min-width: 80px; width: 10%"
     [matMenuTriggerFor]="menu" #matMenuTrigger="matMenuTrigger" (mouseenter)="matMenuTrigger.openMenu()"
     (mouseenter)="matMenuTriggerAbout.closeMenu()" >
 
-    Series
+    Work
 
   </button>
 

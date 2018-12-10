@@ -24,6 +24,6 @@
 </div>
 <div mat-dialog-actions>
   <button mat-button (click)="onNoClick()">No Thanks</button>
-  <button mat-button (click)="printData()" [mat-dialog-close]="data" cdkFocusInitial>Ok</button>
+  <button mat-button (click)="printData()" (click)="storeData()" [mat-dialog-close]="data" cdkFocusInitial>Ok</button>
 </div>
 
