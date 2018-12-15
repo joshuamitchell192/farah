@@ -1,7 +1,9 @@
 import { Component, OnInit, Input } from '@angular/core';
 import {ViewChild} from '@angular/core';
-import {MatMenuTrigger} from '@angular/material'
+import {MatMenuTrigger} from '@angular/material';
 import {MatMenuModule} from '@angular/material/menu';
+import { BackendService } from '../backend.service';
+
 
 
 @Component({
@@ -12,11 +14,11 @@ import {MatMenuModule} from '@angular/material/menu';
 
 export class HomeComponent implements OnInit {
 
-  title = "farah's website";
+  private title = "farah's website";
 
-  constructor(private matMenuModule: MatMenuModule) { }
+  constructor(private matMenuModule: MatMenuModule, private _backendService: BackendService) { }
 
   ngOnInit() {
+    this._backendService.confirmConnection();
   }
-
 }

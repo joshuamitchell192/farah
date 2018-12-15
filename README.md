@@ -1,4 +1,11 @@
-# Farah
+# Farah's Photography Website
+
+This is a portfolio website to display and promote a photography business
+
+It includes 3 pages:
+  Home - 
+  Contact - 
+  Work - Displays a page of photographs from previous to give the user and idea of what to expect.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.1.4.
 
