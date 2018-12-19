@@ -50,4 +50,6 @@ export class SeriesComponent implements OnInit {
     this.show = !this.show;
   }
 
+
+
 }
