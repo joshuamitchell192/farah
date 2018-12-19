@@ -6,9 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = "farah's website";
 
-  print() {
-    console.log("Home Button Entered");
+  async delay(ms: number) {
+    return new Promise( resolve => setTimeout(resolve, ms) );
   }
+
+  // closeMenu() {
+  //   matMenuTriggerAbout.closeMenu()
+  // }
 }

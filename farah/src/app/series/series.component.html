@@ -1,8 +1,35 @@
 
+<div class="center" [@showPortfolio]="stateName">
+  <mat-grid-list gutterSize=8px cols="6" rowHeight="4:5" style="margin-top:100px">
 
-<header>
-  Images Div
-</header>
+    <!-- Row 1 -->
+
+    <mat-grid-tile colspan="2" rowspan=2>
+      <img alt="secondary-image" src='../../assets/clarissa2.png' style="width:95%;">
+    </mat-grid-tile>
+    <mat-grid-tile colspan="4">
+        <img src='../../assets/farah1.jpg' style='width:95%'>
+    </mat-grid-tile>
+    <mat-grid-tile colspan=3 rowspan=1>
+      <img src='../../assets/clarissa3.png' style='width:95%'>
+    </mat-grid-tile>
+
+    <!-- Row 2 -->
+
+
+    <mat-grid-tile>
+      <img src='../../assets/Sophie2.JPG' style='width:95%'>
+    </mat-grid-tile>
+    <mat-grid-tile colspan=2 rowspan=2>
+      <img src='../../assets/Sophie1.JPG' style='width:95%'>
+    </mat-grid-tile>
+    <mat-grid-tile colspan=1 rowspan=1>
+      <img src='../../assets/clarissa1.png' style='width:95%'>
+    </mat-grid-tile>
+
+  </mat-grid-list>
+
+</div>
 
 <div class="wrapper">
   <footer style='margin-top:200px; display: block; background-color:rgba(248, 248, 248, 0.904)'>
@@ -10,7 +37,7 @@
     <table style='padding-left:10%; padding-top:50px; text-align:left'>
       <tr>
         <th>Contact Information</th>
-        <th>Burrtios</th>
+        <th>Burritos</th>
         <th>Other</th>
 
       </tr>

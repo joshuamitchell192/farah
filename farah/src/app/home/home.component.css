@@ -1,9 +1,9 @@
 .titleText {
     position: absolute;
-    top:45%;
-    left:75%;
+    top:30%;
+    left:85%;
     transform: translate(-50%, -50%);
-    color: white;
+    color: rgba(0, 0, 0, 0.883);
     font-size:8vmin;
 
 
@@ -30,7 +30,7 @@ img {
 }
 
 .white-icon {
-  color: white;
+  color: black;
 }
 
 @media screen and (max-width: 800px) {
@@ -47,6 +47,7 @@ img {
     position:relative;
     width: 100%;
     height:40%;
+    max-height:600px;
     min-height:600px;
     text-align:center;
     background-size: 100%;
@@ -58,6 +59,7 @@ img {
         position:relative;
         width: 100%;
         height:40%;
+        max-height:600px;
         min-height:500px;
         text-align:center;
         background-size: 100%;
@@ -71,6 +73,7 @@ img {
         position:relative;
         width: 100%;
         height:40%;
+        max-height:600px;
         min-height:400px;
         text-align:center;
         background-size: 100%;
@@ -84,6 +87,7 @@ img {
         position:relative;
         width: 100%;
         height:40%;
+
         min-height:300px;
         text-align:center;
         background-size: 100%;
@@ -96,7 +100,7 @@ img {
 
 
 #title-image {
-    background-image: url('../../assets/farah4.jpg');
+    background-image: url('../../assets/clarissa2-landscape.png');
 }
 
 .secondary-container {

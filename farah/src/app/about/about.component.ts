@@ -15,7 +15,10 @@ export interface ContactDialogueData {
 @Component({
   selector: 'app-about',
   templateUrl: './about.component.html',
-  styleUrls: ['./about.component.css']
+  styleUrls: ['./about.component.css'],
+  animations: [
+    // animation triggers go here
+  ]
 })
 export class AboutComponent implements OnInit {
 
