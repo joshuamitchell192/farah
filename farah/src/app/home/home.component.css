@@ -14,7 +14,7 @@
   margin-right: auto;
   width:60%;
   font-size:2vmin;
-  height:1100px;
+  height:1000px;
 
 }
 
@@ -25,9 +25,6 @@
 
 }
 
-img {
-  margin: 20px;
-}
 
 .white-icon {
   color: black;
@@ -127,13 +124,13 @@ body {
   box-sizing: border-box;
   position: relative;
   padding-bottom: 1em; /* Height of footer */
-  min-height: 100%;
+  min-height: 200px;
 }
 
 
 
 footer {
-  position: absolute;
+  /* position: absolute; */
   bottom: 0;
   width: 100%;
   background-color: #000;
