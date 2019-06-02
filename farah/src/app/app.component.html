@@ -1,24 +1,17 @@
 
-<!-- Logo Image -->
-<div style="text-align: center" >
-  <img alt="Logo" src="src\assets\Logo.JPG" style="width:40%; height:40%">
-
-</div>
-
-<div style="text-align: center">
-
+<nav class="navbar-header" >
   <!--
 
     Home Button
 
   -->
 
-  <button mat-raised-button color="link" style="min-width:80px; width:10%; margin-right:15px"
+  <a mat-button color="link" class="navbar-buttons"
     (mouseenter)="matMenuTrigger.closeMenu()" (mouseenter)="matMenuTriggerAbout.closeMenu()" routerLink="home">
 
-    Home
+    <span>Home</span>
 
-  </button>
+  </a>
 
   <!--
 
@@ -27,11 +20,11 @@
   -->
 
 
-  <button mat-raised-button color="link" style="min-width: 80px; width: 10%; margin-right:15px" mat-menu.hasBackdrop=false
+  <button mat-button color="link" class="navbar-buttons" mat-menu.hasBackdrop=false
     [matMenuTriggerFor]="about" #matMenuTriggerAbout="matMenuTrigger" (mouseenter)="matMenuTriggerAbout.openMenu()"
     (mouseenter)="matMenuTrigger.closeMenu()" routerlink="about">
 
-    About
+    <span>About</span>
 
   </button>
 
@@ -50,11 +43,11 @@
 
   -->
 
-  <button mat-raised-button color="link" style="min-width: 80px; width: 10%"
+  <button mat-button color="link" class="navbar-buttons"
     [matMenuTriggerFor]="menu" #matMenuTrigger="matMenuTrigger" (mouseenter)="matMenuTrigger.openMenu()"
     (mouseenter)="matMenuTriggerAbout.closeMenu()" >
 
-    Work
+    <span>Work</span>
 
   </button>
 
@@ -67,6 +60,14 @@
   </mat-menu>
 
 
+</nav>
+
+<!-- Logo Image -->
+<div style="text-align: center; margin-top: 50px" >
+  <img alt="Logo" src="src\assets\Logo.JPG" style="width:40%; height:40%">
+
 </div>
+
+
 
 <router-outlet></router-outlet>
